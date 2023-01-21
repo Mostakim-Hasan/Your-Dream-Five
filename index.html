@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Dream Five</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="text-center mt-3">Your Dream Five</h1>
+    </header>
+    <main class="d-flex mt-5">
+        <section class="card-grid w-75">
+            <div class="card gap mb-4" style="width: 18rem;">
+                <img src="images/lionel-messi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="lionel-messi-text" class="card-title">Lionel Messi</h5>
+                    <button id="lionel-messi-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/cristiano-ronaldo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="cristiano-ronaldo-text" class="card-title">Cristiano Ronaldo</h5>
+                    <button id="cristiano-ronaldo-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/neymar-jr.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="neymar-jr-text" class="card-title">Neymar Jr.</h5>
+                    <button id="neymar-jr-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/lewandowski.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="robert-lewandowski-text" class="card-title">Robert Lewandowski</h5>
+                    <button id="robert-lewandowski-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/benzema.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="karim-benzema-text" class="card-title">Karim Benzema</h5>
+                    <button id="karim-benzema-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/erling-haaland.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="erling-haaland-text" class="card-title">Erling Haaland</h5>
+                    <button id="erling-haaland-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/kevin-de-bruyne.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="kevin-de-bruyne-text" class="card-title">Kevin De Bruyne</h5>
+                    <button id="kevin-de-bruyne-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/kylian-mbappe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="kylian-mbappe-text" class="card-title">Kylian Mbappe</h5>
+                    <button id="kylian-mbappe-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/harry-kane.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="harry-kane-text" class="card-title">Harry Kane</h5>
+                    <button id="harry-kane-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/mohamed-salah.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="mohamed-salah-text" class="card-title">Mohamed Salah</h5>
+                    <button id="mohamed-salah-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/sergio-ramos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="sergio-ramos-text" class="card-title">Sergio Ramos</h5>
+                    <button id="sergio-ramos-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="images/sadio-mane.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 id="sadio-mane-text" class="card-title">Sadio Mane</h5>
+                    <button id="sadio-mane-btn" type="button" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+        </section>
+        <section class="w-25">
+            <div class="bg-secondary bg-opacity-25 pb-3 rounded">
+                <h2 class="text-center pt-3">Selected - V</h2>
+                <div class="list-holder ps-4 pt-2">
+                    <ol id="olChildren" class="player-list"></ol>
+                </div>
+            </div>
+            <div class="bg-secondary bg-opacity-25 mt-4 pb-3 ps-3 rounded">
+                <h2 class="text-center pt-3">Budget</h2>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Per Player</label>
+                    </div>
+                    <div class="col-auto w-50">
+                        <input id="per-player" class="w-100" type="text">
+                    </div>
+                </div>
+                <div class="d-grid col-6 mx-auto mt-3">
+                    <button id="calculate-btn" class="btn btn-primary" type="button">Calculate</button>
+                </div>
+                <div class="d-flex mt-3">
+                    <p>Player Expenses</p>
+                    <p class="ps-3">$<span id="player-expenses">00</span></p>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Manager</label>
+                    </div>
+                    <div class="col-auto w-50">
+                        <input id="manager" class="w-100" type="text">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="col-auto ps-4">
+                        <label for="inputPassword6" class="col-form-label">Coach</label>
+                    </div>
+                    <div class="col-auto w-50">
+                        <input id="coach" class="w-100" type="text">
+                    </div>
+                </div>
+                <div class="d-grid col-6 mx-auto mt-3">
+                    <button id="calculate-total" class="btn btn-primary" type="button">Calculate Tolal</button>
+                </div>
+                <div class="d-flex mt-3">
+                    <p>Total</p>
+                    <p class="ps-3 text-success">$<span id="total">00</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="js/player-list.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+
+</html>
